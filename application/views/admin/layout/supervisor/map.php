@@ -1,0 +1,1 @@
+<?php $this->view("admin/layout/temp/map"); ?>

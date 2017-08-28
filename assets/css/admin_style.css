@@ -1,0 +1,75 @@
+
+.dataTables_scrollBody{
+    overflow-x: hidden !important;
+}
+.issue-note{
+    width: 400px !important;
+}
+@media only screen and (max-width: 1000px) {
+    .dataTables_scrollBody{
+        width: 100%;
+        overflow-x: scroll !important;
+    }
+}
+table.dataTable thead .sorting_asc:after {
+    content: "" !important;
+}
+table.dataTable thead .sorting_desc:after {
+    content: "" !important;
+}
+table.dataTable thead .sorting:after {
+    content: "" !important;
+}
+table.dataTable thead > tr > th {
+    padding-right: 8px !important;
+}
+
+.li-color{
+    padding: 10px;
+    list-style: none;
+    border-left: 5px solid white;
+    text-transform: capitalize;
+    font: 300 16px/16px "Roboto", sans-serif;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+.custom-ul{
+    padding: 0;
+    width: 90%;
+    margin: 5%;
+}
+.li-color img{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.tools a:hover{
+    cursor: pointer;
+}
+.col-order{
+    background-color: red;
+    padding: 5px 10px;
+    color: white;
+    position: relative;
+    top: -1px;
+    margin-left: 25px;
+}
+#loader{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.2;
+    z-index: 100000;
+}
+#loader img{
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: calc(50% - 64px);
+    top: calc(50% - 64px);
+}
